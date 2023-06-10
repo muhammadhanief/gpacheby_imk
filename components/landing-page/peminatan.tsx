@@ -24,7 +24,7 @@ const Peminatan = () => {
           <h1 className="text-2xl text-center uppercase text-white">
             Divisi Peminatan
           </h1>
-          <div className="h-2 bg-cheby w-36 mx-auto" />
+          <div className="h-1 bg-cheby w-36 mx-auto -mt-3" />
         </div>
       </div>
     </div>

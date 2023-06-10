@@ -8,10 +8,12 @@ import { usePathname } from "next/navigation";
 
 const Header = () => {
   return (
-    <header className="z-50 relative">
+    <header className="z-50 relative bg-black">
       <nav className="flex w-full justify-between overflow-hidden items-center">
         <div className="mx-4 w-24 h-16 relative">
-          <Image fill src={Logo} style={{ objectFit: "contain" }}></Image>
+          <a href="/">
+            <Image fill src={Logo} style={{ objectFit: "contain" }}></Image>
+          </a>
         </div>
         <div className="flex gap-6 pr-4">
           {NAVIGATION.map((nav) => (
@@ -49,7 +51,7 @@ const NavItem: FC<NavItemProps> = ({ name, href, children }) => {
         href.split("/").at(1) !== "" ? (
           <div className="w-full h-1 -mt-0.5 bg-cheby"></div>
         ) : null}
-        <div className="flex-col hidden group-hover:flex absolute">
+        <div className="flex-col hidden group-hover:flex absolute bg-black rounded">
           {children.map((child) => (
             <Link
               className="hover:no-underline hover:bg-cheby group px-4 py-2 rounded transition-colors duration-300 no-underline text-white hover:text-black "

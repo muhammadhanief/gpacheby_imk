@@ -107,7 +107,7 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/GpaCheby/"
               target="_blank"
-              className="rounded-full bg-cheby p-3   "
+              className="rounded-full bg-cheby p-3  hover:bg-white duration-300 "
             >
               <div className="h-8 w-8 relative ">
                 <Image fill src={"/facebook-f.svg"}></Image>

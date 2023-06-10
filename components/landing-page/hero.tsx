@@ -25,8 +25,8 @@ const Hero = () => {
         <div className="container mx-auto py-[20vh] text-white">
           <h1 className="text-7xl text-white">
             <span className="underline underline-offset-12 decoration-4 decoration-cheby">
-              GPA
-            </span>{" "}
+              GPA{" "}
+            </span>
             Cheby
           </h1>
           <p className="text-2xl max-w-lg font-medium mb-12">
