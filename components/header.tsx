@@ -12,7 +12,12 @@ const Header = () => {
       <nav className="flex w-full justify-between overflow-hidden items-center">
         <div className="mx-4 w-24 h-16 relative">
           <a href="/">
-            <Image fill src={Logo} style={{ objectFit: "contain" }}></Image>
+            <Image
+              fill
+              src={Logo}
+              style={{ objectFit: "contain" }}
+              alt=""
+            ></Image>
           </a>
         </div>
         <div className="flex gap-6 pr-4">
