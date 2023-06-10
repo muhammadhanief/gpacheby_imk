@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <div className="flex gap-6 pr-4">
           {NAVIGATION.map((nav) => (
-            <NavItem {...nav}></NavItem>
+            <NavItem key={nav.name} {...nav}></NavItem>
           ))}
         </div>
       </nav>
@@ -56,6 +56,7 @@ const NavItem: FC<NavItemProps> = ({ name, href, children }) => {
             <Link
               className="hover:no-underline hover:bg-cheby group px-4 py-2 rounded transition-colors duration-300 no-underline text-white hover:text-black "
               href={child.href}
+              key={child.name}
             >
               {child.name}
             </Link>
