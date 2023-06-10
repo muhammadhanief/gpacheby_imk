@@ -110,7 +110,7 @@ const Footer = () => {
               className="rounded-full bg-cheby p-3  hover:bg-white duration-300 "
             >
               <div className="h-8 w-8 relative ">
-                <Image fill src={"/facebook-f.svg"}></Image>
+                <Image fill src={"/facebook-f.svg"} alt=""></Image>
               </div>
             </a>
             <a
@@ -119,7 +119,7 @@ const Footer = () => {
               className="rounded-full bg-cheby p-3 hover:bg-white duration-300 "
             >
               <div className="h-8 w-8 relative ">
-                <Image fill src={"/twitter.svg"}></Image>
+                <Image fill src={"/twitter.svg"} alt=""></Image>
               </div>
             </a>
             <a
@@ -128,7 +128,7 @@ const Footer = () => {
               className="rounded-full bg-cheby p-3  hover:bg-white duration-300  "
             >
               <div className="h-8 w-8 relative ">
-                <Image fill src={"/youtube.svg"}></Image>
+                <Image fill src={"/youtube.svg"} alt=""></Image>
               </div>
             </a>
             <a
@@ -137,7 +137,7 @@ const Footer = () => {
               className="rounded-full bg-cheby p-3  hover:bg-white duration-300  "
             >
               <div className="h-8 w-8 relative ">
-                <Image fill src={"/instagram.svg"}></Image>
+                <Image fill src={"/instagram.svg"} alt=""></Image>
               </div>
             </a>
           </div>
