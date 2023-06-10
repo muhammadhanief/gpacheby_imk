@@ -12,7 +12,10 @@ const PengurusHarian = () => {
         <div className="h-1 bg-cheby w-44 mx-auto -mt-3" />
         <div className="flex mx-auto gap-10 justify-center mt-16">
           {PENGURUS.map((pengurus) => (
-            <div className="bg-cheby/50 rounded-xl flex flex-col gap-6 w-48 px-6 py-12">
+            <div
+              className="bg-cheby/50 rounded-xl flex flex-col gap-6 w-48 px-6 py-12"
+              key={pengurus.name}
+            >
               <div className="w-24 h-24 rounded-full mx-auto relative">
                 <Image
                   src={pengurus.image}
