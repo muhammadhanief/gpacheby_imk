@@ -21,7 +21,9 @@ const Peminatan = () => {
         }}
       >
         <div className="container mx-auto py-24">
-          <h1 className="text-2xl text-center uppercase">Divisi Peminatan</h1>
+          <h1 className="text-2xl text-center uppercase text-white">
+            Divisi Peminatan
+          </h1>
           <div className="h-2 bg-cheby w-36 mx-auto" />
         </div>
       </div>

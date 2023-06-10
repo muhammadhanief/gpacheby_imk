@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 const Header = () => {
   return (
-    <header>
+    <header className="z-50 relative">
       <nav className="flex w-full justify-between overflow-hidden items-center">
         <div className="mx-4 w-24 h-16 relative">
           <Image fill src={Logo} style={{ objectFit: "contain" }}></Image>
@@ -40,7 +40,7 @@ const NavItem: FC<NavItemProps> = ({ name, href, children }) => {
     return (
       <div className="group">
         <div
-          className={`hover:bg-cheby group px-4 py-2 rounded transition-colors duration-300 no-underline flex gap-2 items-center hover:text-black`}
+          className={`hover:bg-cheby text-white group px-4 py-2 rounded transition-colors duration-300 no-underline flex gap-2 items-center hover:text-black`}
         >
           {name}
           <ChevronDownIcon className="h-4 w-4"></ChevronDownIcon>
@@ -52,7 +52,7 @@ const NavItem: FC<NavItemProps> = ({ name, href, children }) => {
         <div className="flex-col hidden group-hover:flex absolute">
           {children.map((child) => (
             <Link
-              className="hover:bg-cheby group px-4 py-2 rounded transition-colors duration-300 no-underline text-white hover:text-black "
+              className="hover:no-underline hover:bg-cheby group px-4 py-2 rounded transition-colors duration-300 no-underline text-white hover:text-black "
               href={child.href}
             >
               {child.name}
@@ -83,8 +83,8 @@ const NAVIGATION = [
     name: "Artikel",
     href: "/artikel",
     children: [
-      { name: "Artikel 1", href: "/artikel/kegiatan" },
-      { name: "Artikel 2", href: "/artikel/hari_penting" },
+      { name: "Kegiatan", href: "/artikel/kegiatan" },
+      { name: "Peringatan Hari", href: "/artikel/hari_penting" },
     ],
   },
   { name: "Pendakian Umum", href: "/pendakian_umum" },

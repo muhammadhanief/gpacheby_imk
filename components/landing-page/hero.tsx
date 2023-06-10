@@ -22,8 +22,8 @@ const Hero = () => {
           height: "calc(100vh - 8rem)",
         }}
       >
-        <div className="container mx-auto py-[20vh]">
-          <h1 className="text-7xl">
+        <div className="container mx-auto py-[20vh] text-white">
+          <h1 className="text-7xl text-white">
             <span className="underline underline-offset-12 decoration-4 decoration-cheby">
               GPA
             </span>{" "}
@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
           <Link
             href="/tentang"
-            className="bg-white px-8 p-4 text-lg text-black rounded-md"
+            className="bg-white px-8 p-4 text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
           >
             Kenali kami
           </Link>

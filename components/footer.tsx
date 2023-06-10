@@ -60,16 +60,24 @@ const Footer = () => {
           <FooterTitle name="Alamat" />
           <ul className="list-none flex flex-col gap-2">
             <li className="flex gap-2">
-              <MapPinIcon className="h-4 w-4" />
+              <MapPinIcon className="h-4 w-4 shrink-0 text-white" />
               <div>
-                Jalan Otto Iskandardinata No. 64C, Jakarta Timur, Daerah Khusus
-                Ibukota Jakarta 13330
+                <a
+                  className="text-white hover:text-cheby hover:no-underline"
+                  href="https://goo.gl/maps/aEVmttYKfCmenhck8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Jalan Otto Iskandardinata No. 64C, Jakarta Timur, Daerah
+                  Khusus Ibukota Jakarta 13330
+                </a>
               </div>
             </li>
             <li className="flex gap-2">
-              <PhoneIcon className="h-4 w-4" />
+              <PhoneIcon className="h-4 w-4 text-white" />
               <div>
                 <a
+                  className="text-white hover:text-cheby hover:no-underline"
                   href="http://wa.me/6285376470953"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -79,9 +87,10 @@ const Footer = () => {
               </div>
             </li>
             <li className="flex gap-2">
-              <EnvelopeIcon className="h-4 w-4" />
+              <EnvelopeIcon className="h-4 w-4 text-white" />
               <div>
                 <a
+                  className="text-white hover:text-cheby hover:no-underline"
                   href="mailto:ukmcheby@stis.ac.id"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -107,7 +116,7 @@ const Footer = () => {
             <a
               href="https://twitter.com/gpacheby_stis"
               target="_blank"
-              className="rounded-full bg-cheby p-3   "
+              className="rounded-full bg-cheby p-3 hover:bg-white duration-300 "
             >
               <div className="h-8 w-8 relative ">
                 <Image fill src={"/twitter.svg"}></Image>
@@ -116,7 +125,7 @@ const Footer = () => {
             <a
               href="https://www.youtube.com/channel/UCrsdlzMqPNxRZI2EjmTik1Q/"
               target="_blank"
-              className="rounded-full bg-cheby p-3   "
+              className="rounded-full bg-cheby p-3  hover:bg-white duration-300  "
             >
               <div className="h-8 w-8 relative ">
                 <Image fill src={"/youtube.svg"}></Image>
@@ -125,7 +134,7 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/gpacheby_stis/"
               target="_blank"
-              className="rounded-full bg-cheby p-3   "
+              className="rounded-full bg-cheby p-3  hover:bg-white duration-300  "
             >
               <div className="h-8 w-8 relative ">
                 <Image fill src={"/instagram.svg"}></Image>
@@ -143,7 +152,7 @@ interface FooterTitleProps {
 }
 
 const FooterTitle: FC<FooterTitleProps> = ({ name }) => {
-  return <div className="mb-8    text-center text-xl">{name}</div>;
+  return <div className="mb-8  text-white  text-center text-xl">{name}</div>;
 };
 
 export default Footer;
