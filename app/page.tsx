@@ -3,7 +3,6 @@ import Hero from "@/components/landing-page/hero";
 import Peminatan from "@/components/landing-page/peminatan";
 import PengurusHarian from "@/components/landing-page/pengurus-harian";
 import Artikel from "@/components/landing-page/artikel-kegiatan";
-import SliderKegiatan from "@/components/landing-page/slider-kegiatan";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
