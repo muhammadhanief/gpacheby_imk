@@ -75,7 +75,7 @@ const LogoGpaCheby = () => {
             </div>
           </Link>
           <Link href={"/"} className="w-full">
-            <div clasName="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
+            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
               Perlengkapan
             </div>
           </Link>
