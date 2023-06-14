@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
           <Link
             href="/tentang"
-            className="bg-white px-8 p-4 text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
+            className="bg-orange  px-8 p-4 text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
           >
             Kenali kami
           </Link>
