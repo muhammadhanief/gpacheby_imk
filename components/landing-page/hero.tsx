@@ -19,7 +19,7 @@ const Hero = () => {
       <div
         className="w-full relative"
         style={{
-          height: "calc(100vh - 8rem)",
+          height: "calc(100vh - 4rem)",
         }}
       >
         <div className="container mx-auto py-[20vh] text-white">
@@ -29,7 +29,7 @@ const Hero = () => {
             </span>
             Cheby
           </h1>
-          <p className="text-2xl max-w-lg font-medium mb-12">
+          <p className="text-2xl max-w-lg font-medium m              b-12">
             Organisasi kepecintaalaman yang berada dalam naungan senat mahasiswa
             Politeknik Statistika STIS
           </p>

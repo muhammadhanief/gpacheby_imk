@@ -34,51 +34,71 @@ const LogoGpaCheby = () => {
       <div className="text-black container mx-auto ">
         <p>Divisi</p>
         <div className="flex w-full gap-6 ">
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Gunung dan Hutan
-            </div>
-          </Link>
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Olah Raga Arus Deras
-            </div>
-          </Link>
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Rock Climbing and Caving
-            </div>
-          </Link>
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Pengabdian Masyarakat
-            </div>
-          </Link>
+          <div className="w-full hover:shadow-xl">
+            <Link href={"/tentang_kami/gunung-hutan"} className="w-full ">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border ">
+                Gunung dan Hutan
+              </div>
+            </Link>
+          </div>
+
+          <div className="w-full hover:shadow-xl">
+            <Link href={"/"} className="w-full">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
+                Olah Raga Arus Deras
+              </div>
+            </Link>
+          </div>
+
+          <div className="w-full hover:shadow-xl">
+            <Link href={"/"} className="w-full">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
+                Pengabdian Masyarakat
+              </div>
+            </Link>
+          </div>
+
+          <div className="w-full hover:shadow-xl">
+            <Link href={"/"} className="w-full">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
+                Rock Climbing and Caving
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="text-black container mx-auto py-1">
         <p>Seksi</p>
+
         <div className="flex w-full gap-6 ">
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Pengembangan Sumber Daya Manusia
-            </div>
-          </Link>
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Pertolongan Pertama dan SAR
-            </div>
-          </Link>
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Hubungan Masyarakat
-            </div>
-          </Link>
-          <Link href={"/"} className="w-full">
-            <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
-              Perlengkapan
-            </div>
-          </Link>
+          <div className="w-full hover:shadow-xl ">
+            <Link href={"/"} className="w-full  ">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border ">
+                Pengembangan Sumber Daya Manusia
+              </div>
+            </Link>
+          </div>
+          <div className="w-full hover:shadow-xl">
+            <Link href={"/"} className="w-full">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
+                Pertolongan Pertama dan SAR
+              </div>
+            </Link>
+          </div>
+          <div className="w-full hover:shadow-xl">
+            <Link href={"/"} className="w-full">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
+                Hubungan Masyarakat
+              </div>
+            </Link>
+          </div>
+          <div className="w-full hover:shadow-xl">
+            <Link href={"/"} className="w-full">
+              <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
+                Perlengkapan
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 
