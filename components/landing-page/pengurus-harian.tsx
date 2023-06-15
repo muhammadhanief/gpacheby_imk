@@ -16,7 +16,7 @@ const PengurusHarian = () => {
               className="bg-cheby/50 rounded-xl flex flex-col gap-6 w-48 px-6 py-12"
               key={pengurus.name}
             >
-              <div className="w-24 h-24 rounded-full mx-auto relative">
+              <div className="w-32 h-32 rounded-full mx-auto relative">
                 <Image
                   src={pengurus.image}
                   alt={pengurus.name}

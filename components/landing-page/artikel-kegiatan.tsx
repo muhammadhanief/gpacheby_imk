@@ -148,7 +148,7 @@ const ArticleCard: FC<ArticleCardProps> = ({
         <div className="text-xl text-white">
           <div>{title}</div>
         </div>
-        <div className="text-gray-100">{description}</div>
+        <div className="text-gray-100 text-justify">{description}</div>
 
         <Link
           className="absolute right-0 bottom-0 bg-cheby text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-white group"
@@ -214,7 +214,7 @@ const ArticleCardHariPenting: FC<ArticleCardProps> = ({
         <div className="text-xl text-black">
           <div>{title}</div>
         </div>
-        <div className="text-gray-100">{description}</div>
+        <div className="text-gray-100 text-justify">{description}</div>
 
         <Link
           className="absolute right-0 bottom-0 bg-white text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-black hover:text-white group"

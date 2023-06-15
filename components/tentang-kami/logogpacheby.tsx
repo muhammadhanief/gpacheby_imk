@@ -14,7 +14,7 @@ const LogoGpaCheby = () => {
         ></Image>
       </div>
       <p className="text-black text-center">logo GPA CHEBY</p>
-      <div className="container mx-auto py-2">
+      <div className="container mx-auto py-2 text-justify">
         <p className="text-black ">
           GPA Cheby merupakan salah satu unit kegiatan mahasiswa (UKM) yang
           berada di bawah naungan Senat Mahasiswa (Sema) Politeknik Statistika
@@ -31,7 +31,7 @@ const LogoGpaCheby = () => {
           Divisi dan Sie GPA Cheby, yaitu:
         </p>
       </div>
-      <div className="text-black container mx-auto ">
+      <div className="text-black container mx-auto text-justify">
         <p>Divisi</p>
         <div className="flex w-full gap-6 ">
           <div className="w-full hover:shadow-xl">
@@ -102,7 +102,7 @@ const LogoGpaCheby = () => {
         </div>
       </div>
 
-      <div className="container mx-auto py-2">
+      <div className="container mx-auto py-2 text-justify">
         <p className="text-black ">
           Dalam satu kepengurusan, GPA Cheby memiliki Badan Pengurus Harian
           (BPH) yang terdiri dari ketua, wakil ketua, sekretaris dan bendahara.
