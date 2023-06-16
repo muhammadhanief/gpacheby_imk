@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import { ChevronLeftIcon } from "@heroicons/react/24/outline";
 
 const LogoGpaCheby = () => {
   return (
@@ -15,7 +15,7 @@ const LogoGpaCheby = () => {
       </div>
       <p className="text-black text-center">logo GPA CHEBY</p>
       <div className="container mx-auto py-2 text-justify">
-        <p className="text-black ">
+        <p className="text-black px-4">
           GPA Cheby merupakan salah satu unit kegiatan mahasiswa (UKM) yang
           berada di bawah naungan Senat Mahasiswa (Sema) Politeknik Statistika
           STIS. Kegiatan yang dilakukan GPA Cheby berada di dalam pengawasan
@@ -23,7 +23,7 @@ const LogoGpaCheby = () => {
           Polstat STIS. Pengawasan tersebut terkait dengan perizinan kegiatan,
           ketercapaian pelaksanaan kegiatan, pendanaan, dsb
         </p>
-        <p className="text-black ">
+        <p className="text-black px-4">
           Dalam pelaksanaannya, GPA Cheby memiliki seksi dan divisi dengan
           fokusnya masing-masing. Divisi memiliki fokus pada perancangan dan
           pelaksanaan teknis kegiatan; sedangkan sie memiliki fokus dalam
@@ -32,8 +32,8 @@ const LogoGpaCheby = () => {
         </p>
       </div>
       <div className="text-black container mx-auto text-justify">
-        <p>Divisi</p>
-        <div className="flex w-full gap-6 ">
+        <p className="px-4">Divisi</p>
+        <div className="flex flex-col md:flex-row w-full gap-6">
           <div className="w-full hover:shadow-xl">
             <Link href={"/tentang_kami/gunung-hutan"} className="w-full ">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border ">
@@ -68,9 +68,9 @@ const LogoGpaCheby = () => {
         </div>
       </div>
       <div className="text-black container mx-auto py-1">
-        <p>Seksi</p>
+        <p className="px-4">Seksi</p>
 
-        <div className="flex w-full gap-6 ">
+        <div className="flex flex-col md:flex-row w-full gap-6 ">
           <div className="w-full hover:shadow-xl ">
             <Link href={"/"} className="w-full  ">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border ">
@@ -121,8 +121,8 @@ const LogoGpaCheby = () => {
 
       <div className="container mx-auto py-2 pb-4 ">
         <Link className="font-bold text-black" href={"/sejarah"}>
+          {<ChevronLeftIcon className="h-3 pl-1"></ChevronLeftIcon>}
           Lihat juga Sejarah GPA CHEBY
-          {<ChevronRightIcon className="h-3 pl-1"></ChevronRightIcon>}
         </Link>
       </div>
     </div>

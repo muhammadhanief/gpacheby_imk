@@ -34,7 +34,7 @@ const contentSejarah = () => {
         <div className="float-right  relative aspect-video mx-auto m-5 pt-8 pb-4 pl-4">
           <img src="/sejarah/album-sejarah.png" alt="" className="w-full" />
         </div>
-        <p className="text-black indent-8">
+        <p className="text-black indent-8 px-4">
           Pada senat periode 1976-1977 merupakan awal berdirinya CHEBY
           (organisasi pencinta alam AIS). Inspirasi berdirinya organisasi ini
           pada awalnya tercetus dari ide Bapak Ali Sadikin yang waktu itu
@@ -48,10 +48,10 @@ const contentSejarah = () => {
           khusus untuk mahasiswa AIS di Desa Cisalada (sebuah desa di kaki
           Gunung Salak) untuk membentukan GPA tersebut.
         </p>
-        <p className="text-black indent-8">
+        <p className="text-black indent-8 px-4">
           Yang ikut pada saat itu ada 16 orang dan mereka itu adalah :
         </p>
-        <div className="flex text-black -mt-6 ">
+        <div className="flex text-black -mt-6 px-4">
           <div className="flex-col">
             <ul>
               <li>Dantez Simbolon (Tingkat III)</li>
@@ -77,7 +77,7 @@ const contentSejarah = () => {
             </ul>
           </div>
         </div>
-        <p className="text-black indent-8">
+        <p className="text-black indent-8 px-4">
           Mereka inilah yang pertama kali meresmikan berdirinya GPA CHEBY yang
           pada saat itu bernama Statisti Group. Nama Cheby sendiri diambil dari
           rumus statistik yaitu Chebyshev (suatu rumusan untuk menentukan batas
@@ -89,7 +89,7 @@ const contentSejarah = () => {
           itu adalah Eri Hastoto dan disetujui. Kemudian dibuat pula lambang
           Cheby oleh Satrio Nugroho.
         </p>
-        <p className="text-black indent-8">
+        <p className="text-black indent-8 px-4">
           Kegiatan yang dilakukan oleh Cheby sampai saat ini antara lain :
           hiking, camping, ekspedisi, pendakian gunung, ikut serta dalam
           organisasi lingkungan hidup (WALHI) serta mengikuti seminar lingkungan

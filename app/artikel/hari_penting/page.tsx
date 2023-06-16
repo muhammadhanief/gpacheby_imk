@@ -14,7 +14,10 @@ export default function page() {
             <h1 className="text-2xl text-center uppercase">Peringatan Hari</h1>
             <div className="h-1 bg-cheby w-44 mx-auto mb-5 -mt-4" />
             <div className=" grid grid-cols-4 gap-6">
-              <ArticleCard {...ARTICLES[0]} />
+              <Link href={"/artikel/hari_penting/children_hari_penting"}>
+                <ArticleCard {...ARTICLES[0]} />
+              </Link>
+
               <ArticleCard {...ARTICLES[0]} />
               <ArticleCard {...ARTICLES[0]} />
               <ArticleCard {...ARTICLES[0]} />
@@ -86,6 +89,6 @@ const ARTICLES: ArticleCardProps[] = [
     description:
       "Sejarah Hari Tanpa Tembakau Sedunia Hari Tanpa Tembakau Sedunia dicetuskan oleh Organisasi Kesehatan Dunia (WHO) pada tahun 1987. ",
     thumbnail: "/article/tobacco.png",
-    href: "/artikel/hari_penting",
+    href: "/artikel/hari_penting/children_hari_penting",
   },
 ];

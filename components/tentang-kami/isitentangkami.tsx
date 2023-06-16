@@ -20,8 +20,8 @@ const isitentangkami = () => {
         Anggota Divisi Gunung dan Hutan GPA CHEBY tahun 2022/2023
       </p>
 
-      <div className="container mx-auto py-2 text-justify">
-        <p className="text-black ">
+      <div className="container mx-auto py-2 text-justify px-4">
+        <p className="text-black px-4">
           Divisi Gunung dan Hutan merupakan salah satu divisi dalam struktur
           organisasi GPA Cheby yang dibentuk dengan tujuan untuk mendalami dan
           mengembangkan kegiatan pendakian gunung, penelusuran atau penjelajahan

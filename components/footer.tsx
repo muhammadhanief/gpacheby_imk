@@ -10,7 +10,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-abu py-8">
-      <div className="flex justify-between px-6 ">
+      <div className="flex flex-col gap-8 md:flex-row justify-between px-6 ">
         <div className="w-full">
           <FooterTitle name="Artikel Terkini" />
           <ul className="list-none flex flex-col gap-2">

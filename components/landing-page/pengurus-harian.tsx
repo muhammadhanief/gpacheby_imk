@@ -10,7 +10,7 @@ const PengurusHarian = () => {
       <div className="container mx-auto">
         <h1 className="text-2xl text-center uppercase">Pengurus Harian</h1>
         <div className="h-1 bg-cheby w-44 mx-auto -mt-3" />
-        <div className="flex mx-auto gap-10 justify-center mt-16">
+        <div className="flex flex-col md:flex-row mx-auto gap-10 items-center  justify-center mt-16">
           {PENGURUS.map((pengurus) => (
             <div
               className="bg-cheby/50 rounded-xl flex flex-col gap-6 w-48 px-6 py-12"
