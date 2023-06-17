@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ImageDivisi from "@/public/foto-divisi/gh.jpg";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const isitentangkami = () => {
@@ -11,7 +12,8 @@ const isitentangkami = () => {
       <div className="relative aspect-video max-w-2xl mx-auto m-5">
         <Image
           fill
-          src={"/foto-divisi/gh.JPG"}
+          // src={"/foto-divisi/gh.JPG"}
+          src={ImageDivisi}
           style={{ objectFit: "contain" }}
           alt=""
         ></Image>
