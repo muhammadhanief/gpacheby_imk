@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // import HeroImage from "../../public/bg-hero.jpg";
-import ImageDivisi from "../../public/foto-divisi/gh.jpg";
+import ImageDivisi from "../../public/foto-divisi/gh.png";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const isitentangkami = () => {
