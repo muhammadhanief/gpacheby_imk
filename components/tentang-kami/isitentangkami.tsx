@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ImageDivisi from "@/public/foto-divisi/gh.jpg";
+import ImageDivisi from "../../public/foto-divisi/gh.jpg";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const isitentangkami = () => {
