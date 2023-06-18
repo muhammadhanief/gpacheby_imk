@@ -2,14 +2,17 @@
 import Image from "next/image";
 import Logo from "../public/cheby-logo.jpg";
 import Link from "next/link";
-import { FC } from "react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { FC, useState } from "react";
+import { ChevronDownIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
+import { slide as Menu } from "react-burger-menu";
+import Button from "./button";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="z-50 relative bg-black">
-      <nav className="flex w-full justify-between overflow-hidden items-center">
+      <nav className="flex w-full justify-between overflow-hidden items-center ">
         <div className="mx-4 w-24 h-16 relative">
           <a href="/">
             <Image
@@ -20,7 +23,23 @@ const Header = () => {
             ></Image>
           </a>
         </div>
-        <div className="flex gap-6 pr-4">
+
+        <Bars3Icon
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="mx-4 z-20 w-24 h-16 relative cursor-pointer md:hidden"
+        />
+
+        <div className="hidden md:flex gap-6 pr-4">
+          {NAVIGATION.map((nav) => (
+            <NavItem key={nav.name} {...nav}></NavItem>
+          ))}
+        </div>
+
+        <div
+          className={`fixed right-0 top-0 text-white md:hidden bg-black pt-16 ${
+            isMenuOpen ? "flex flex-col" : "hidden"
+          } h-[100vh]`}
+        >
           {NAVIGATION.map((nav) => (
             <NavItem key={nav.name} {...nav}></NavItem>
           ))}
