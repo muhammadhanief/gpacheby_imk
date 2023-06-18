@@ -89,7 +89,7 @@ const Header = () => {
   // batas bawah yang dipindah
 
   return (
-    <header className="z-50 relative  bg-black">
+    <header className="z-50 sticky top-0 z-50 bg-black">
       <nav className="flex w-full justify-between overflow-hidden items-center ">
         <div className="hidden md:block mx-4 w-24 h-16 relative">
           <a href="/">
