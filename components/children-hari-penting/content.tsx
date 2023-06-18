@@ -1,9 +1,13 @@
+import Image from "next/image";
+import Foto from "../../public/artikel/peringatan/tobacco.png";
+
 const Content = () => {
   return (
     <div className="bg-white">
       <div className="mx-auto container text-black bg-white text-justify pb-16">
         <div className="float-left p-4">
-          <img className="p-4" src="/artikel/peringatan/Poster.png" alt="" />
+          <img className="p-4" src="/artikel/peringatan/tobacco.png" alt="" />
+          {/* <Image height={120} src={Foto}></Image> */}
         </div>
         {/* <div className="container mx-auto text-justify text-black"> */}
         <h1 className="text-black pt-6">

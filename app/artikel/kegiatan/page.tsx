@@ -38,10 +38,18 @@ export default function page() {
             </div> */}
 
             <div className=" grid grid-cols-4 gap-6">
-              <ArticleCard {...ARTICLES[0]} />
-              <ArticleCard {...ARTICLES[0]} />
-              <ArticleCard {...ARTICLES[0]} />
-              <ArticleCard {...ARTICLES[0]} />
+              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+                <ArticleCard {...ARTICLES[0]} />
+              </Link>
+              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+                <ArticleCard {...ARTICLES[0]} />
+              </Link>
+              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+                <ArticleCard {...ARTICLES[0]} />
+              </Link>
+              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+                <ArticleCard {...ARTICLES[0]} />
+              </Link>
             </div>
           </div>
         </div>
@@ -104,12 +112,12 @@ const ArticleCard: FC<ArticleCardProps> = ({
 
 const ARTICLES: ArticleCardProps[] = [
   {
-    title: "Hari Tanpa Tembakau Sedunia : “We Need Food, Not Tobacco”",
+    title: "Pelantikan Anggota Muda GPA Cheby Angkatan 46",
     label: "Kegiatan",
     date: "31 Mei 2021",
     description:
-      "Sejarah Hari Tanpa Tembakau Sedunia Hari Tanpa Tembakau Sedunia dicetuskan oleh Organisasi Kesehatan Dunia (WHO) pada tahun 1987. ",
-    thumbnail: "/article/tobacco.png",
-    href: "/artikel/hari_penting",
+      "Pelantikan Anggota Muda GPA Cheby Angkatan 46 Pada Minggu, 5 Maret 2023, telah dilaksanakan Pelantikan Anggota Muda GPA Cheby Angkatan 46. ",
+    thumbnail: "/artikel/kegiatan/pelantikan-AM.jpeg",
+    href: "/artikel/kegiatan",
   },
 ];

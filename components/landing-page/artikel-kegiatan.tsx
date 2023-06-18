@@ -176,12 +176,12 @@ const ARTICLES: ArticleCardProps[] = [
 
 const ARTICLESKegitan: ArticleCardProps[] = [
   {
-    title: "Hari Tanpa Tembakau Sedunia : “We Need Food, Not Tobacco”",
+    title: "Pelantikan Anggota Muda GPA Cheby Angkatan 46",
     label: "Kegiatan",
     date: "31 Mei 2021",
     description:
-      "Sejarah Hari Tanpa Tembakau Sedunia Hari Tanpa Tembakau Sedunia dicetuskan oleh Organisasi Kesehatan Dunia (WHO) pada tahun 1987. ",
-    thumbnail: "/artikel/peringatan/tobacco.png",
+      "Pelantikan Anggota Muda GPA Cheby Angkatan 46 Pada Minggu, 5 Maret 2023, telah dilaksanakan Pelantikan Anggota Muda GPA Cheby Angkatan 46. ",
+    thumbnail: "/artikel/kegiatan/pelantikan-AM.jpeg",
     href: "/artikel/kegiatan",
   },
 ];
