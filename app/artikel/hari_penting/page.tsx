@@ -13,22 +13,36 @@ export default function page() {
           <div className="container mx-auto">
             <h1 className="text-2xl text-center uppercase">Peringatan Hari</h1>
             <div className="h-1 bg-cheby w-44 mx-auto mb-5 -mt-4" />
-            <div className=" grid grid-cols-4 gap-6">
-              <Link href={"/artikel/hari_penting/children_hari_penting"}>
+            {/* <div className="grid grid-cols-4 gap-6"> */}
+            <div className="flex flex-col md:flex-row">
+              <Link
+                className="p-3"
+                href={"/artikel/hari_penting/children_hari_penting"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
-              <Link href={"/artikel/hari_penting/children_hari_penting"}>
+              <Link
+                className="p-3"
+                href={"/artikel/hari_penting/children_hari_penting"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
-              <Link href={"/artikel/hari_penting/children_hari_penting"}>
+              <Link
+                className="p-3"
+                href={"/artikel/hari_penting/children_hari_penting"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
-              <Link href={"/artikel/hari_penting/children_hari_penting"}>
+              <Link
+                className="p-3"
+                href={"/artikel/hari_penting/children_hari_penting"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
             </div>
           </div>
         </div>
+        <div className="bg-white h-24"></div>
       </div>
     </main>
   );

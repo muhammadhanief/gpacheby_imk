@@ -3,7 +3,7 @@ import HeroImage from "../../public/bg 3 1.png";
 
 const Hero = () => {
   return (
-    <div className="w-full overflow-hidden ">
+    <div className="w-full overflow-hidden pb-16">
       <div className="h-[50vh] w-full top-0 left-0 absolute -z-10">
         <Image
           src={HeroImage}

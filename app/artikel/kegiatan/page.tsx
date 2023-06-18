@@ -13,7 +13,6 @@ export default function page() {
           <div className="container mx-auto">
             <h1 className="text-2xl text-center uppercase">Kegiatan</h1>
             <div className="h-1 bg-cheby w-24 mx-auto mb-5 -mt-4" />
-
             {/* <div className="justify-end mx-20 max-w-md">
               <form action="" className="relative mx-auto w-max">
                 <input
@@ -36,22 +35,35 @@ export default function page() {
                 </svg>
               </form>
             </div> */}
-
-            <div className=" grid grid-cols-4 gap-6">
-              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+            {/* <div className=" grid grid-cols-4 gap-6"> */}
+            <div className="flex flex-col md:flex-row">
+              <Link
+                className="p-3"
+                href={"/artikel/kegiatan/children_kegiatan"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
-              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+              <Link
+                className="p-3"
+                href={"/artikel/kegiatan/children_kegiatan"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
-              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+              <Link
+                className="p-3"
+                href={"/artikel/kegiatan/children_kegiatan"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
-              <Link href={"/artikel/kegiatan/children_kegiatan"}>
+              <Link
+                className="p-3"
+                href={"/artikel/kegiatan/children_kegiatan"}
+              >
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
             </div>
           </div>
+          <div className="bg-white h-24"></div>
         </div>
       </div>
     </main>

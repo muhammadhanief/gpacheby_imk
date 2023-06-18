@@ -6,21 +6,6 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 const contentSejarah = () => {
   return (
     <div className="w-full overflow-hidden bg-white">
-      {/* <h1 className="uppercase text-black text-center py-4">
-        gunung dan hutan
-      </h1>
-      <div className="relative aspect-video max-w-2xl mx-auto m-5">
-        <Image
-          fill
-          src={GambarSejarah}
-          style={{ objectFit: "contain" }}
-          alt=""
-        ></Image>
-      </div>
-      <p className="text-black text-center">
-        Anggota Divisi Gunung dan Hutan GPA CHEBY tahun 2022/2023
-      </p> */}
-
       <div className="container mx-auto py-2 text-justify ">
         {/* <div className="relative aspect-video max-w-2xl mx-auto m-5 ">
           <Image
@@ -105,6 +90,20 @@ const contentSejarah = () => {
           {<ChevronRightIcon className="h-3 pl-1"></ChevronRightIcon>}
         </Link>
       </div>
+      {/* <h1 className="uppercase text-black text-center py-4">
+        gunung dan hutan
+      </h1>
+      <div className="relative aspect-video max-w-2xl mx-auto m-5">
+        <Image
+          fill
+          src={GambarSejarah}
+          style={{ objectFit: "contain" }}
+          alt=""
+        ></Image>
+      </div>
+      <p className="text-black text-center">
+        Anggota Divisi Gunung dan Hutan GPA CHEBY tahun 2022/2023
+      </p> */}
     </div>
   );
 };

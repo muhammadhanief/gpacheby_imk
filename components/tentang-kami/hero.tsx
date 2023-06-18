@@ -1,6 +1,5 @@
 import Image from "next/image";
 import HeroImage from "../../public/bg 3 1.png";
-import Link from "next/link";
 
 const Hero = () => {
   return (

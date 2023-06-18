@@ -77,45 +77,28 @@ const Komentar = () => {
       <div className="flex items-center mx-auto container">
         <p className="text-black shrink-0 mt-8 pr-3">Tinggalkan Komentar</p>
       </div>
-      <div className=" mx-auto gap-2 flex container">
-        <div className="flex-col">
-          <div>
+      <div className=" mx-auto gap-4  flex justify-between container ">
+        <div className="flex-col w-1/2 ">
+          <div className="py-2">
             Nama *
-            <div className="bg-gray-50 mt-4 rounded px-6 py-4 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            <div className="bg-gray-50 mt-4 rounded px-6 py-4 text-sm"></div>
           </div>
-          Email *
-          <div className="bg-gray-50 mt-4 rounded px-6 py-4 text-sm">wdwd</div>
-          Website
-          <div className="bg-gray-50 mt-4 rounded  px-6 py-4 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          <div className="py-2">
+            Email *
+            <div className="bg-gray-50 mt-4 rounded px-6 py-4 text-sm"></div>
+          </div>
+          <div className="py-2">
+            Website
+            <div className="bg-gray-50 mt-4 rounded px-6 py-4 text-sm "></div>
           </div>
         </div>
-        <div>
+        <div className="w-1/2 py-2">
           Komentar
-          <div className="bg-gray-50 mt-4 rounded px-6 py-4 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+          <div className="bg-gray-50 mt-4 rounded px-6 py-4 text-sm h-44 "></div>
         </div>
+      </div>
+      <div className="container py-2 flex justify-end mx-auto">
+        <Button name="Unggah Komentar" />
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import MarsBg from "../../public/bg-hero.jpg";
+import MarsBg from "../../public/sejarah/aaa.png";
 import { UserIcon } from "@heroicons/react/24/outline";
 
 const Mars = () => {
   return (
     <>
-      <div className="w-full relative py-8 bg-blue-600">
+      <div className="w-full relative py-8 ">
         <div className="absolute w-full h-full top-0">
           <Image
             src={MarsBg}
@@ -15,7 +15,7 @@ const Mars = () => {
               objectFit: "cover",
             }}
           />
-          <div className="absolute bg-black/50 w-full h-full top-0"></div>
+          <div className="absolute bg-black/60  w-full h-full top-0"></div>
         </div>
         <div className="text-white relative z-10 text-center px-4">
           <h2 className="text-3xl">Mars GPA Cheby</h2>
