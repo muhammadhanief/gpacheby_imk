@@ -25,7 +25,7 @@ const TemplateBerita = (props: Props) => {
           alt=""
         ></Image>
       </div>
-      <p className="text-black text-center">
+      <p className="text-black  text-center">
         Anggota Divisi {props.title} GPA CHEBY tahun 2022/2023
       </p>
 

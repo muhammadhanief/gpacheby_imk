@@ -5,7 +5,6 @@ export default function page() {
   return (
     <main>
       <title>Gunung Hutan | GPA CHEBY</title>
-      <Isitentangkami></Isitentangkami>
     </main>
   );
 }
