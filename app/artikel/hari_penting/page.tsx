@@ -17,7 +17,6 @@ export default function page() {
               <Link href={"/artikel/hari_penting/children_hari_penting"}>
                 <ArticleCard {...ARTICLES[0]} />
               </Link>
-
               <ArticleCard {...ARTICLES[0]} />
               <ArticleCard {...ARTICLES[0]} />
               <ArticleCard {...ARTICLES[0]} />

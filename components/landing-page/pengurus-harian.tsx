@@ -81,37 +81,33 @@ const PengurusHarian = () => {
     <div className="bg-white w-full py-20 text-black">
       <div className="container mx-auto">
         <h1 className="text-2xl text-center uppercase">Pengurus Harian</h1>
-        <div className="h-1 bg-cheby w-44 mx-auto -mt-3" />
-        <div className="md:hidden">
-          <div className=" flex-col mt-16">
-            <SliderWrapper>
-              <Slider {...settings}>
-                {PENGURUS.map((pengurus) => (
-                  <div
-                    className="bg-cheby/50 rounded-xl flex flex-col w-48  py-12"
-                    key={pengurus.name}
-                  >
-                    <div className="w-32 h-32 rounded-full mx-auto relative">
-                      <Image
-                        src={pengurus.image}
-                        alt={pengurus.name}
-                        layout="fill"
-                        className="rounded-full"
-                      />
-                    </div>
-                    <div className="text-center">
-                      <div className="text-xl font-medium">
-                        {pengurus.title}
-                      </div>
-                      <div>{pengurus.name}</div>
-                    </div>
+        <div className="h-1 w-44 mx-auto -mt-3" />
+        <div className="md:hidden w-2/3 mx-auto">
+          <div className="mt-16 ">
+            <Slider {...settings}>
+              {PENGURUS.map((pengurus) => (
+                <div
+                  className="bg-cheby/50 rounded-xl w-16 py-12"
+                  key={pengurus.name}
+                >
+                  <div className="w-32 h-32 rounded-full mx-auto relative">
+                    <Image
+                      src={pengurus.image}
+                      alt={pengurus.name}
+                      layout="fill"
+                      className="rounded-full"
+                    />
                   </div>
-                ))}
-              </Slider>
-            </SliderWrapper>
+                  <div className="text-center">
+                    <div className="text-xl font-medium">{pengurus.title}</div>
+                    <div>{pengurus.name}</div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden md:block">
           <div className="flex flex-col md:flex-row mx-auto gap-10 items-center  justify-center mt-16">
             {PENGURUS.map((pengurus) => (
               <div

@@ -3,7 +3,11 @@ import Image from "next/image";
 import Logo from "../public/cheby-logo.jpg";
 import Link from "next/link";
 import { FC, useState } from "react";
-import { ChevronDownIcon, Bars3Icon } from "@heroicons/react/24/outline";
+import {
+  ChevronDownIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
 import { slide as Menu } from "react-burger-menu";
 
@@ -85,7 +89,7 @@ const Header = () => {
   // batas bawah yang dipindah
 
   return (
-    <header className="z-50 relative bg-black">
+    <header className="z-50 relative  bg-black">
       <nav className="flex w-full justify-between overflow-hidden items-center ">
         <div className="mx-4 w-24 h-16 relative">
           <a href="/">
@@ -98,10 +102,17 @@ const Header = () => {
           </a>
         </div>
 
-        <Bars3Icon
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="mx-4 z-20 w-24 h-16 relative cursor-pointer md:hidden"
-        />
+        {isMenuOpen ? (
+          <XMarkIcon
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="mx-4 z-20 w-24 h-16 relative cursor-pointer md:hidden"
+          />
+        ) : (
+          <Bars3Icon
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="mx-4 z-20 w-24 h-16 relative cursor-pointer md:hidden"
+          />
+        )}
 
         <div className="hidden md:flex gap-6 pr-4">
           {NAVIGATION.map((nav) => (

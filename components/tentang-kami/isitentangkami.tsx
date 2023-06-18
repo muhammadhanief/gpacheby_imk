@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-// import HeroImage from "../../public/bg-hero.jpg";
 import ImageDivisi from "../../public/foto-divisi/orad.jpeg";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -14,6 +13,7 @@ const isitentangkami = () => {
         <Image
           fill
           // src={"/foto-divisi/gh.JPG"}
+          priority
           src={ImageDivisi}
           style={{ objectFit: "contain" }}
           alt=""
@@ -24,7 +24,7 @@ const isitentangkami = () => {
       </p>
 
       <div className="container mx-auto py-2 text-justify px-4">
-        <p className="text-black px-4">
+        <p className="text-black">
           Divisi Gunung dan Hutan merupakan salah satu divisi dalam struktur
           organisasi GPA Cheby yang dibentuk dengan tujuan untuk mendalami dan
           mengembangkan kegiatan pendakian gunung, penelusuran atau penjelajahan
