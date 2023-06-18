@@ -2,7 +2,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import ReactHtmlParser from "react-html-parser";
+import Komentar from "../komentar/komentar";
 
 type Props = {
   title: string;
@@ -47,6 +47,7 @@ const TemplateBerita = (props: Props) => {
           {<ChevronRightIcon className="h-3 pl-1"></ChevronRightIcon>}
         </Link>
       </div>
+      <Komentar />
     </div>
   );
 };

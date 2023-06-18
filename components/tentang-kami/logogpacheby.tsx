@@ -78,28 +78,28 @@ const LogoGpaCheby = () => {
 
         <div className="flex flex-col md:flex-row w-full gap-6 ">
           <div className="w-full hover:shadow-xl ">
-            <Link href={"/"} className="w-full  ">
+            <Link href={"/tentang_kami/sie/psdm"} className="w-full  ">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border ">
                 Pengembangan Sumber Daya Manusia
               </div>
             </Link>
           </div>
           <div className="w-full hover:shadow-xl">
-            <Link href={"/"} className="w-full">
+            <Link href={"/tentang_kami/sie/pp-sar"} className="w-full">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
                 Pertolongan Pertama dan SAR
               </div>
             </Link>
           </div>
           <div className="w-full hover:shadow-xl">
-            <Link href={"/"} className="w-full">
+            <Link href={"/tentang_kami/sie/humas"} className="w-full">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
                 Hubungan Masyarakat
               </div>
             </Link>
           </div>
           <div className="w-full hover:shadow-xl">
-            <Link href={"/"} className="w-full">
+            <Link href={"/tentang_kami/sie/perkap"} className="w-full">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
                 Perlengkapan
               </div>
