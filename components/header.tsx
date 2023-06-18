@@ -91,7 +91,18 @@ const Header = () => {
   return (
     <header className="z-50 relative  bg-black">
       <nav className="flex w-full justify-between overflow-hidden items-center ">
-        <div className="mx-4 w-24 h-16 relative">
+        <div className="hidden md:block mx-4 w-24 h-16 relative">
+          <a href="/">
+            <Image
+              fill
+              src={Logo}
+              style={{ objectFit: "contain" }}
+              alt=""
+            ></Image>
+          </a>
+        </div>
+
+        <div className=" md:hidden mx-4 w-16 h-10 relative">
           <a href="/">
             <Image
               fill
@@ -105,12 +116,12 @@ const Header = () => {
         {isMenuOpen ? (
           <XMarkIcon
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="mx-4 z-20 w-24 h-16 relative cursor-pointer md:hidden"
+            className="mx-4 z-20 w-16 h-10 relative cursor-pointer md:hidden"
           />
         ) : (
           <Bars3Icon
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="mx-4 z-20 w-24 h-16 relative cursor-pointer md:hidden"
+            className="mx-4 z-20 w-16 h-10 relative cursor-pointer md:hidden"
           />
         )}
 

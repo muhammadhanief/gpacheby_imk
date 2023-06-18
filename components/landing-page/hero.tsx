@@ -34,8 +34,8 @@ const Hero = () => {
             Politeknik Statistika STIS
           </p>
           <Link
-            href="/tentang"
-            className="bg-orange  px-8 p-4 text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
+            href="/tentang_kami"
+            className="bg-white  px-8 p-4 text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
           >
             Kenali kami
           </Link>
