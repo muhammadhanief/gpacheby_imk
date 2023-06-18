@@ -2,7 +2,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ReactHtmlParser from "react-html-parser";
+// import ReactHtmlParser from "react-html-parser";
 
 type Props = {
   title: string;
@@ -33,7 +33,7 @@ const TemplateBerita = (props: Props) => {
       <div className="container mx-auto py-2 text-justify px-4">
         {props.content.map((content) => (
           <p key={content} className="text-black px-4">
-            {ReactHtmlParser(content)}
+            {content}
           </p>
         ))}
       </div>
