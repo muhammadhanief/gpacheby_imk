@@ -116,12 +116,12 @@ const Header = () => {
         {isMenuOpen ? (
           <XMarkIcon
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="mx-4 z-20 w-16 h-10 relative cursor-pointer md:hidden"
+            className="mx-4 z-20 w-16 h-10 relative cursor-pointer md:hidden bg-black text-white"
           />
         ) : (
           <Bars3Icon
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="mx-4 z-20 w-16 h-10 relative cursor-pointer md:hidden"
+            className="mx-4 z-20 w-16 h-10 relative cursor-pointer md:hidden bg-black text-white"
           />
         )}
 
