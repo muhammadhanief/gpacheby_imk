@@ -3,7 +3,7 @@ import TemplateBerita from "@/components/tentang-kami/TemplateBerita";
 
 const Data = {
   title: "Rock Climbing and Caving",
-  imagesrc: "/foto-divisi/rcc.jpg",
+  imagesrc: "/foto-divisi/rcc.png",
   content: [
     "Divisi Rock Climbing dan Caving merupakan salah satu dari empat divisi yang ada di GPA Cheby. Sesuai namanya, divisi ini bergerak di bidang climbing dan caving, namun saat ini masih lebih berfokus pada kegiatan climbingnya saja.",
     "Divisi Rock Climbing dan Caving diupayakan dapat menjadi wadah belajar bagi seluruh mahasiswa Politeknik Statistika STIS pada umumnya dan anggota GPA Cheby pada khususnya. Terutama dalam pembelajaran mendalami teknik-teknik memanjat, pengenalan alat alat climbing dan penggunaannya,  memperkuat pemahaman mengenai tebing dan gua, serta hal lain terkait panjat tebing dan caving. Untuk itu dilakukan pelatihan internal bagi anggota yang dilaksanakan langsung di GOR Ciracas untuk langsung di praktikkan.",
