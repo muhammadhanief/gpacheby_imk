@@ -6,7 +6,6 @@ export default function page() {
   return (
     <main>
       <title>Artikel - MAPALA Politeknik Statistika STIS Jakarta</title>
-
       <Content />
       <Komentar />
     </main>

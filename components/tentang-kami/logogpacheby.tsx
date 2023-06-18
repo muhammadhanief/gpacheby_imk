@@ -33,7 +33,7 @@ const LogoGpaCheby = () => {
       </div>
       <div className="text-black container mx-auto text-justify">
         <p className="px-4">Divisi</p>
-        <div className="flex flex-col md:flex-row w-full gap-6">
+        <div className="flex flex-col md:flex-row md:w-full w-11/12 mx-auto gap-6">
           <div className="w-full hover:shadow-xl">
             <Link
               href={"/tentang_kami/divisi/gunung-hutan"}
@@ -76,7 +76,7 @@ const LogoGpaCheby = () => {
       <div className="text-black container mx-auto py-1">
         <p className="px-4">Seksi</p>
 
-        <div className="flex flex-col md:flex-row w-full gap-6 ">
+        <div className="flex flex-col md:flex-row md:w-full w-11/12 mx-auto gap-6">
           <div className="w-full hover:shadow-xl ">
             <Link href={"/tentang_kami/sie/psdm"} className="w-full  ">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border ">

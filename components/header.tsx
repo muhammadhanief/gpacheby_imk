@@ -82,7 +82,7 @@ const Header = () => {
         { name: "Peringatan Hari", href: "/artikel/hari_penting" },
       ],
     },
-    { name: "Pendakian Umum", href: "/pendakian_umum" },
+    // { name: "Pendakian Umum", href: "/pendakian_umum" },
     { name: "Catatan Perjalanan", href: "/catatan_perjalanan" },
   ];
 
