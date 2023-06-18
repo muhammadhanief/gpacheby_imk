@@ -31,7 +31,9 @@ const TemplateBerita = (props: Props) => {
 
       <div className="container mx-auto py-2 text-justify px-4">
         {props.content.map((content) => (
-          <p className="text-black px-4">{content}</p>
+          <p key={content} className="text-black px-4">
+            {content}
+          </p>
         ))}
       </div>
 
