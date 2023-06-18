@@ -3,16 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import Hero from "@/components/children-kegiatan/hero";
 
 export default function page() {
   return (
     <main>
       <title>Kegiatan | GPA CHEBY</title>
       <div>
+        <Hero />
         <div className="bg-white w-full py-3 text-black">
           <div className="container mx-auto">
-            <h1 className="text-2xl text-center uppercase">Kegiatan</h1>
-            <div className="h-1 bg-cheby w-24 mx-auto mb-5 -mt-4" />
+            {/* <h1 className="text-2xl text-center uppercase">Kegiatan</h1> */}
+            {/* <div className="h-1 bg-cheby w-24 mx-auto mb-5 -mt-4" /> */}
             {/* <div className="justify-end mx-20 max-w-md">
               <form action="" className="relative mx-auto w-max">
                 <input
@@ -63,7 +65,6 @@ export default function page() {
               </Link>
             </div>
           </div>
-          <div className="bg-white h-24"></div>
         </div>
       </div>
     </main>

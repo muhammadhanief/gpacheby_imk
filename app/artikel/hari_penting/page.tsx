@@ -2,18 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import Hero from "@/components/children-hari-penting/hero";
 
 export default function page() {
   return (
     <main>
       <title>Hari Penting | GPA CHEBY</title>
       <div>
+        <Hero />
         <div className="bg-white w-full py-3 text-black">
           <div className="container mx-auto">
-            <h1 className="text-2xl text-center uppercase">Peringatan Hari</h1>
-            <div className="h-1 bg-cheby w-44 mx-auto mb-5 -mt-4" />
-            {/* <div className="grid grid-cols-4 gap-6"> */}
             <div className="flex flex-col md:flex-row">
               <Link
                 className="p-3"
@@ -42,7 +40,6 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="bg-white h-24"></div>
       </div>
     </main>
   );
