@@ -35,7 +35,10 @@ const LogoGpaCheby = () => {
         <p className="px-4">Divisi</p>
         <div className="flex flex-col md:flex-row w-full gap-6">
           <div className="w-full hover:shadow-xl">
-            <Link href={"/tentang_kami/gunung-hutan"} className="w-full ">
+            <Link
+              href={"/tentang_kami/divisi/gunung-hutan"}
+              className="w-full "
+            >
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border ">
                 Gunung dan Hutan
               </div>
@@ -43,7 +46,7 @@ const LogoGpaCheby = () => {
           </div>
 
           <div className="w-full hover:shadow-xl">
-            <Link href={"/"} className="w-full">
+            <Link href={"/tentang_kami/divisi/orad"} className="w-full">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
                 Olah Raga Arus Deras
               </div>
@@ -51,7 +54,10 @@ const LogoGpaCheby = () => {
           </div>
 
           <div className="w-full hover:shadow-xl">
-            <Link href={"/"} className="w-full">
+            <Link
+              href={"/tentang_kami/divisi/pengabdian-masyarakat"}
+              className="w-full"
+            >
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
                 Pengabdian Masyarakat
               </div>
@@ -59,7 +65,7 @@ const LogoGpaCheby = () => {
           </div>
 
           <div className="w-full hover:shadow-xl">
-            <Link href={"/"} className="w-full">
+            <Link href={"/tentang_kami/divisi/rcc"} className="w-full">
               <div className="rounded-xl h-14 flex justify-center items-center bg-cheby w-full text-black border-solid border">
                 Rock Climbing and Caving
               </div>
