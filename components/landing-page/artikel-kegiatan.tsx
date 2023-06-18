@@ -169,7 +169,7 @@ const ARTICLES: ArticleCardProps[] = [
     date: "31 Mei 2021",
     description:
       "Sejarah Hari Tanpa Tembakau Sedunia Hari Tanpa Tembakau Sedunia dicetuskan oleh Organisasi Kesehatan Dunia (WHO) pada tahun 1987. ",
-    thumbnail: "/article/tobacco.png",
+    thumbnail: "/artikel/peringatan/tobacco.png",
     href: "/artikel/hari_penting",
   },
 ];
@@ -181,7 +181,7 @@ const ARTICLESKegitan: ArticleCardProps[] = [
     date: "31 Mei 2021",
     description:
       "Sejarah Hari Tanpa Tembakau Sedunia Hari Tanpa Tembakau Sedunia dicetuskan oleh Organisasi Kesehatan Dunia (WHO) pada tahun 1987. ",
-    thumbnail: "/article/tobacco.png",
+    thumbnail: "/artikel/peringatan/tobacco.png",
     href: "/artikel/kegiatan",
   },
 ];
