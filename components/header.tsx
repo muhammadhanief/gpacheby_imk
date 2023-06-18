@@ -102,7 +102,7 @@ const Header = () => {
           </a>
         </div>
 
-        <div className=" md:hidden mx-4 w-16 h-10 relative">
+        <div className="md:hidden mx-4 w-16 h-10 relative">
           <a href="/">
             <Image
               fill
@@ -134,7 +134,7 @@ const Header = () => {
         <div
           className={`fixed right-0 top-0 text-white md:hidden bg-black pt-16 ${
             isMenuOpen ? "flex flex-col" : "hidden"
-          } h-[100vh]`}
+          } `}
         >
           {NAVIGATION.map((nav) => (
             <NavItem key={nav.name} {...nav}></NavItem>
