@@ -82,20 +82,20 @@ const Peminatan = () => {
 
   const PENGURUS = [
     {
-      name: "Arus Deras",
-      image: Orad,
-    },
-    {
       name: "Gunung",
       image: GH,
     },
     {
-      name: "Pengmas",
-      image: Pengmas,
-    },
-    {
       name: "Rock Climbing",
       image: RCC,
+    },
+    {
+      name: "Arus Deras",
+      image: Orad,
+    },
+    {
+      name: "Pengmas",
+      image: Pengmas,
     },
   ];
 
