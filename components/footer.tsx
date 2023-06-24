@@ -19,7 +19,7 @@ const Footer = () => {
                 href={"/artikel/hari_penting/children_hari_penting"}
                 className="text-white hover:text-cheby hover:no-underline"
               >
-                Hari Tanpa Tembakau Sedunia : “We Need Food, Not Tobacco"
+                Hari Tanpa Tembakau Sedunia : “We Need Food, Not Tobacco”
               </Link>
             </li>
             <li>
