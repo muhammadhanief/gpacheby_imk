@@ -7,6 +7,7 @@ import RCC from "../../public/lambang-divisi/Rock Climbing.png";
 import Slider from "react-slick";
 import styled from "styled-components";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const Peminatan = () => {
   const SliderWrapper = styled.div`
@@ -84,18 +85,22 @@ const Peminatan = () => {
     {
       name: "Gunung",
       image: GH,
+      href: "tentang_kami/divisi/gunung-hutan",
     },
     {
       name: "Rock Climbing",
       image: RCC,
+      href: "tentang_kami/divisi/rcc",
     },
     {
       name: "Arus Deras",
       image: Orad,
+      href: "/tentang_kami/divisi/orad",
     },
     {
       name: "Pengmas",
       image: Pengmas,
+      href: "tentang_kami/divisi/pengabdian-masyarakat",
     },
   ];
 
@@ -125,34 +130,7 @@ const Peminatan = () => {
           <div className="hidden md:block">
             <div className="flex flex-col md:flex-row mx-auto gap-10 items-center  justify-center mt-16">
               {PENGURUS.map((pengurus) => (
-                // <div
-                //   className="bg-cheby/50 rounded-xl flex flex-col gap-6 w-48 px-6 py-12"
-                //   key={pengurus.name}
-                // >
-                <div
-                  key={pengurus.name}
-                  className="aspect-video mx-auto relative shrink-0 w-72"
-                >
-                  <Image
-                    src={pengurus.image}
-                    alt=""
-                    fill
-                    className=""
-                    style={{
-                      objectFit: "contain",
-                      objectPosition: "center",
-                    }}
-                  />
-                </div>
-                // </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="md:hidden w-2/3 mx-auto ">
-            <div className="mt-16 ">
-              <Slider {...settings}>
-                {PENGURUS.map((pengurus) => (
+                <Link key={pengurus.name} href={pengurus.href}>
                   <div
                     key={pengurus.name}
                     className="aspect-video mx-auto relative shrink-0 w-72"
@@ -168,6 +146,34 @@ const Peminatan = () => {
                       }}
                     />
                   </div>
+                </Link>
+                // </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="md:hidden w-2/3 mx-auto ">
+            <div className="mt-16 ">
+              <Slider {...settings}>
+                {PENGURUS.map((pengurus) => (
+                  <Link key={pengurus.name} href={pengurus.href}>
+                    <div
+                      key={pengurus.name}
+                      className="aspect-video mx-auto relative shrink-0 w-72"
+                    >
+                      <Image
+                        src={pengurus.image}
+                        alt=""
+                        fill
+                        className=""
+                        style={{
+                          objectFit: "contain",
+                          objectPosition: "center",
+                        }}
+                      />
+                    </div>
+                  </Link>
+
                   // </div>
                 ))}
               </Slider>

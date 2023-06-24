@@ -16,23 +16,15 @@ const Footer = () => {
           <ul className="list-none flex flex-col gap-2">
             <li>
               <Link
+                href={"/artikel/hari_penting/children_hari_penting"}
                 className="text-white hover:text-cheby hover:no-underline"
-                href={"/"}
               >
-                EARTH DAY: “Let’s Go Green”
+                Hari Tanpa Tembakau Sedunia : “We Need Food, Not Tobacco"
               </Link>
             </li>
             <li>
               <Link
-                href={"/"}
-                className="text-white hover:text-cheby hover:no-underline"
-              >
-                HARI AIR SEDUNIA : “Groundwater: Making the Invisible Visible”
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/"}
+                href={"/artikel/kegiatan/children_kegiatan"}
                 className="text-white hover:text-cheby hover:no-underline"
               >
                 Pelantikan Anggota Muda GPA Cheby Angkatan 46
@@ -40,18 +32,10 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href={"/"}
+                href={"/catatan_perjalanan"}
                 className="text-white hover:text-cheby hover:no-underline"
               >
                 Catatan Perjalanan PI
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/"}
-                className="text-white hover:text-cheby hover:no-underline"
-              >
-                Hari Peduli Sampah Nasional: Strategi Pengolahan Sampah
               </Link>
             </li>
           </ul>
