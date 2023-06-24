@@ -6,6 +6,7 @@ import Mars from "@/components/sejarah/mars";
 export default function page() {
   return (
     <main>
+      <title>Sejarah | GPA CHEBY</title>
       <Hero />
       <ContentSejarah />
       <Mars />
