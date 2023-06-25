@@ -136,6 +136,8 @@ const Peminatan = () => {
                     className="aspect-video mx-auto relative shrink-0 w-72"
                   >
                     <Image
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/4XhPwAH4QL0aLPpNwAAAABJRU5ErkJggg=="
                       src={pengurus.image}
                       alt=""
                       fill

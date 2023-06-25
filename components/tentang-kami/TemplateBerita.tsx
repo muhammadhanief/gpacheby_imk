@@ -2,6 +2,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Suspense from "react";
 import Komentar from "../komentar/komentar";
 
 type Props = {
@@ -20,6 +21,8 @@ const TemplateBerita = (props: Props) => {
         <Image
           fill
           // src={"/foto-divisi/gh.JPG"}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/4XhPwAH4QL0aLPpNwAAAABJRU5ErkJggg=="
           priority
           src={props.imagesrc}
           style={{ objectFit: "contain" }}

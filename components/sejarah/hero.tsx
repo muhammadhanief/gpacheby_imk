@@ -6,6 +6,8 @@ const Hero = () => {
     <div className="w-full overflow-hidden pb-16">
       <div className="h-[50vh] w-full top-0 left-0 absolute -z-10">
         <Image
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/4XhPwAH4QL0aLPpNwAAAABJRU5ErkJggg=="
           src={HeroImage}
           alt="Hero Image"
           fill
