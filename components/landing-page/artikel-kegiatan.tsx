@@ -131,8 +131,8 @@ const ArticleCard: FC<ArticleCardProps> = ({
   href,
 }) => {
   return (
-    <div className="bg-black p-6 rounded-xl flex gap-4 m-4">
-      <div className="relative rounded shrink-0 w-44 h-64">
+    <div className="bg-black p-6 rounded-xl flex md:flex-row flex-col  gap-4 m-4 items-center">
+      <div className="relative rounded shrink-0 w-44 h-64 ">
         <Image
           src={thumbnail}
           alt={title}
@@ -147,18 +147,19 @@ const ArticleCard: FC<ArticleCardProps> = ({
           <div className="text-cheby">{label}</div>
           <div className="text-gray-100">{date}</div>
         </div>
-        <div className="text-xl text-white">
+        <div className="md:text-xl text-lg text-white">
           <div>{title}</div>
         </div>
         <div className="text-gray-100 text-justify">{description}</div>
-
-        <Link
-          className="absolute right-0 bottom-0 bg-cheby text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-white group"
-          href={href}
-        >
-          Selengkapnya{" "}
-          <ChevronRightIcon className="h-4 w-4 text-black group-hover:translate-x-1 duration-300" />
-        </Link>
+        <div className="flex justify-end">
+          <Link
+            className=" w-32 bg-cheby text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-white group"
+            href={href}
+          >
+            Selengkapnya{" "}
+            <ChevronRightIcon className="h-4 w-4 text-black group-hover:translate-x-1 duration-300" />
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -197,8 +198,8 @@ const ArticleCardHariPenting: FC<ArticleCardProps> = ({
   href,
 }) => {
   return (
-    <div className="bg-cheby p-6 rounded-xl flex gap-4 m-4">
-      <div className="relative rounded shrink-0 w-44 h-64">
+    <div className="bg-black p-6 rounded-xl flex md:flex-row flex-col  gap-4 m-4 items-center">
+      <div className="relative rounded shrink-0 w-44 h-64 ">
         <Image
           src={thumbnail}
           alt={title}
@@ -210,21 +211,22 @@ const ArticleCardHariPenting: FC<ArticleCardProps> = ({
       </div>
       <div className="flex flex-col gap-4 w-full relative">
         <div className="flex justify-between w-full text-sm">
-          <div className="text-black">{label}</div>
-          <div className="text-black-300">{date}</div>
+          <div className="text-cheby">{label}</div>
+          <div className="text-gray-100">{date}</div>
         </div>
-        <div className="text-xl text-black">
+        <div className="md:text-xl text-lg text-white">
           <div>{title}</div>
         </div>
         <div className="text-gray-100 text-justify">{description}</div>
-
-        <Link
-          className="absolute right-0 bottom-0 bg-white text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-black hover:text-white group"
-          href={href}
-        >
-          Selengkapnya{" "}
-          <ChevronRightIcon className="h-4 w-4 hover:text-white text-black group-hover:translate-x-1 duration-300" />
-        </Link>
+        <div className="flex justify-end">
+          <Link
+            className=" w-32 bg-cheby text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-white group"
+            href={href}
+          >
+            Selengkapnya{" "}
+            <ChevronRightIcon className="h-4 w-4 text-black group-hover:translate-x-1 duration-300" />
+          </Link>
+        </div>
       </div>
     </div>
   );

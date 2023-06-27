@@ -25,7 +25,7 @@ const Hero = () => {
           <h1 className="text-6xl text-center text-cheby uppercase [text-shadow:_-2px_-2px_0_rgb(255_255_255_/_100%)] ">
             TENTANG KAMI
           </h1>
-          <div className="-m-8 h-2 bg-white w-64 mx-auto"></div>
+          <div className="-m-8 h-2 md:bg-white w-64 mx-auto"></div>
         </div>
       </div>
     </div>

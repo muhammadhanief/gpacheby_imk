@@ -109,13 +109,13 @@ const LogoGpaCheby = () => {
       </div>
 
       <div className="container mx-auto py-2 text-justify">
-        <p className="text-black ">
+        <p className="text-black px-4">
           Dalam satu kepengurusan, GPA Cheby memiliki Badan Pengurus Harian
           (BPH) yang terdiri dari ketua, wakil ketua, sekretaris dan bendahara.
           BPH dalam pelaksanaan kegiatannya dibantu oleh koordinator dari
           masing-masing sie dan divisi.
         </p>
-        <p className="text-black ">
+        <p className="text-black px-4">
           Pada waktu yang telah ditentukan akan dilakukan evaluasi program kerja
           yang telah dilaksanakan sepanjang waktu sebelum evaluasi diadakan,
           untuk mengetahui hal-hal yang perlu diperbaiki untuk kegiatan
@@ -125,7 +125,7 @@ const LogoGpaCheby = () => {
         </p>
       </div>
 
-      <div className="container mx-auto py-2 pb-4 ">
+      <div className="container mx-auto py-2 pb-4 px-2">
         <Link className="font-bold text-black" href={"/sejarah"}>
           {<ChevronLeftIcon className="h-3 pl-1"></ChevronLeftIcon>}
           Lihat juga Sejarah GPA CHEBY

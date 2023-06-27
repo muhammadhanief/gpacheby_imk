@@ -22,10 +22,10 @@ const Hero = () => {
         }}
       >
         <div className="container mx-auto py-[10vh] text-white">
-          <h1 className="text-6xl text-center text-cheby uppercase [text-shadow:_-2px_-2px_0_rgb(255_255_255_/_100%)] ">
+          <h1 className="text-5xl md:text-6xl text-center text-cheby uppercase [text-shadow:_-2px_-2px_0_rgb(255_255_255_/_100%)] ">
             Catatan Perjalanan
           </h1>
-          <div className="-m-8 h-2 bg-white w-96 mx-auto"></div>
+          <div className="-m-8 h-2 md:bg-white w-96 mx-auto"></div>
         </div>
       </div>
     </div>
