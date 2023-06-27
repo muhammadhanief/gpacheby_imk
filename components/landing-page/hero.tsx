@@ -25,22 +25,24 @@ const Hero = () => {
         }}
       >
         <div className="container mx-auto py-[20vh] text-white">
-          <h1 className="text-7xl text-white">
-            <span className="underline underline-offset-12 decoration-4 decoration-cheby">
-              GPA{" "}
-            </span>
-            Cheby
-          </h1>
-          <p className="text-2xl max-w-lg font-medium m              b-12">
-            Organisasi kepecintaalaman yang berada dalam naungan senat mahasiswa
-            Politeknik Statistika STIS
-          </p>
-          <Link
-            href="/tentang_kami"
-            className="bg-white  px-8 p-4 text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
-          >
-            Kenali kami
-          </Link>
+          <div className="pl-3">
+            <h1 className="md:text-7xl  text-white">
+              <span className="underline underline-offset-12 decoration-4 decoration-cheby">
+                GPA{" "}
+              </span>
+              Cheby
+            </h1>
+            <p className="md:text-2xl  max-w-lg font-medium m              b-12">
+              Organisasi kepecintaalaman yang berada dalam naungan senat
+              mahasiswa Politeknik Statistika STIS
+            </p>
+            <Link
+              href="/tentang_kami"
+              className="bg-white py-1 px-2 md:px-8 md:p-4 md:text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
+            >
+              Kenali kami
+            </Link>
+          </div>
         </div>
       </div>
     </div>

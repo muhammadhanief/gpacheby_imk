@@ -47,27 +47,29 @@ const Artikel = () => {
         <div className="container mx-auto">
           <h1 className="text-2xl text-center uppercase">Artikel Terbaru</h1>
           <div className="h-1 bg-cheby w-20 mx-auto -mt-3" />
-          <p className="text-xl text-left ">Kegiatan</p>
-          <SliderWrapper>
-            <Slider {...settings}>
-              <ArticleCard {...ARTICLESKegitan[0]} />
-              <ArticleCard {...ARTICLESKegitan[0]} />
-              <ArticleCard {...ARTICLESKegitan[0]} />
-              <ArticleCard {...ARTICLESKegitan[0]} />
-            </Slider>
-          </SliderWrapper>
-
+          <div className="pb-4">
+            <p className="pl-4 text-xl text-left ">Kegiatan</p>
+            <SliderWrapper>
+              <Slider {...settings}>
+                <ArticleCard {...ARTICLESKegitan[0]} />
+                <ArticleCard {...ARTICLESKegitan[0]} />
+                <ArticleCard {...ARTICLESKegitan[0]} />
+                <ArticleCard {...ARTICLESKegitan[0]} />
+              </Slider>
+            </SliderWrapper>
+          </div>
           {/* peringatan hari */}
-
-          <p className="text-xl text-left ">Peringatan Hari</p>
-          <SliderWrapper>
-            <Slider {...settings}>
-              <ArticleCardHariPenting {...ARTICLES[0]} />
-              <ArticleCardHariPenting {...ARTICLES[0]} />
-              <ArticleCardHariPenting {...ARTICLES[0]} />
-              <ArticleCardHariPenting {...ARTICLES[0]} />
-            </Slider>
-          </SliderWrapper>
+          <div className="py-4">
+            <p className="pl-4 text-xl text-left ">Peringatan Hari</p>
+            <SliderWrapper>
+              <Slider {...settings}>
+                <ArticleCardHariPenting {...ARTICLES[0]} />
+                <ArticleCardHariPenting {...ARTICLES[0]} />
+                <ArticleCardHariPenting {...ARTICLES[0]} />
+                <ArticleCardHariPenting {...ARTICLES[0]} />
+              </Slider>
+            </SliderWrapper>
+          </div>
         </div>
       </div>
     </div>
