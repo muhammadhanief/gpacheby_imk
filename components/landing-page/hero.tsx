@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="h-screen w-full top-0 left-0 absolute -z-10">
         <Image
           placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/4XhPwAH4QL0aLPpNwAAAABJRU5ErkJggg=="
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAnUlEQVR42u3RQREAAAQAMJIr7U8N57YKy+mo4IwUIgQhQhAiBCFCECJEiBCECEGIEIQIQYgQhCBECEKEIEQIQoQgBCFCECIEIUIQIgQhCBGCECEIEYIQIQhBiBCECEGIEIQIQQhChCBECEKEIEQIQhAiBCFCECIEIUIQghAhCBGCECEIEYIQhAhBiBCECEGIEIQIESIEIUIQIgQh3y1RxfTt4L0uBAAAAABJRU5ErkJggg=="
           src={HeroImage}
           alt="Hero Image"
           fill
@@ -26,7 +26,7 @@ const Hero = () => {
       >
         <div className="container mx-auto py-[20vh] text-white">
           <div className="pl-3">
-            <h1 className="md:text-7xl  text-white">
+            <h1 className="md:text-7xl  text-white ">
               <span className="underline underline-offset-12 decoration-4 decoration-cheby">
                 GPA{" "}
               </span>

@@ -87,7 +87,7 @@ const PengurusHarian = () => {
             <Slider {...settings}>
               {PENGURUS.map((pengurus) => (
                 <div
-                  className="bg-cheby/50 rounded-xl w-16 py-12"
+                  className="bg-cheby/75 rounded-xl w-16 py-12"
                   key={pengurus.name}
                 >
                   <div className="w-32 h-32 rounded-full mx-auto relative">
@@ -95,7 +95,7 @@ const PengurusHarian = () => {
                       src={pengurus.image}
                       alt={pengurus.name}
                       layout="fill"
-                      className="rounded-full"
+                      className="rounded-full "
                     />
                   </div>
                   <div className="text-center">
@@ -111,7 +111,7 @@ const PengurusHarian = () => {
           <div className="flex flex-col md:flex-row mx-auto gap-10 items-center  justify-center mt-16">
             {PENGURUS.map((pengurus) => (
               <div
-                className="bg-cheby/50 rounded-xl flex flex-col gap-6 w-48 px-6 py-12"
+                className="bg-cheby/75 rounded-xl flex flex-col gap-6 w-48 px-6 py-12"
                 key={pengurus.name}
               >
                 <div className="w-32 h-32 rounded-full mx-auto relative">

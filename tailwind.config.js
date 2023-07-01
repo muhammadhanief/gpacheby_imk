@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         cheby: "#FFF400",
+        tombol: "#ffd600",
         yellow: {
           100: "#fff500",
           200: "rgba(247, 255, 0, 0.94)",
@@ -57,6 +58,7 @@ module.exports = {
         abu: "#2D2D2D",
       },
       fontFamily: {
+        sans: "Montserrat",
         montserrat: "Montserrat",
         "montserrat-alternates": "'Montserrat Alternates'",
         poppins: "Poppins",

@@ -30,3 +30,11 @@ body {
 a {
   @apply text-white no-underline hover:underline;
 }
+
+p {
+  font-family: "Poppins";
+}
+
+h1 {
+  font-family: "Montserrat";
+}
