@@ -42,33 +42,33 @@ function SampleNextArrow(props: any) {
 
 const Artikel = () => {
   return (
-    <div>
-      <div className="bg-white w-full py-20 text-black">
-        <div className="container mx-auto">
-          <h1 className="text-2xl text-center uppercase">Artikel Terbaru</h1>
-          <div className="h-1 bg-cheby w-20 mx-auto -mt-3" />
-          <div className="pb-4">
-            <p className="pl-4 text-xl text-left ">Kegiatan</p>
-            <SliderWrapper>
-              <Slider {...settings}>
-                <ArticleCard {...ARTICLESKegitan[0]} />
-                <ArticleCard {...ARTICLESKegitan[0]} />
-                <ArticleCard {...ARTICLESKegitan[0]} />
-                <ArticleCard {...ARTICLESKegitan[0]} />
-              </Slider>
-            </SliderWrapper>
-          </div>
-          {/* peringatan hari */}
-          <div className="py-4">
-            <p className="pl-4 text-xl text-left ">Peringatan Hari</p>
-            <SliderWrapper>
-              <Slider {...settings}>
-                <ArticleCardHariPenting {...ARTICLES[0]} />
-                <ArticleCardHariPenting {...ARTICLES[0]} />
-                <ArticleCardHariPenting {...ARTICLES[0]} />
-                <ArticleCardHariPenting {...ARTICLES[0]} />
-              </Slider>
-            </SliderWrapper>
+    <div className="bg-white w-full py-20 text-black">
+      <div className="container mx-auto">
+        <h1 className="text-2xl text-center uppercase">Artikel Terbaru</h1>
+        <div className="h-1 bg-cheby w-20 mx-auto -mt-3" />
+        <div className="pb-4 px-7">
+          <p className="pl-4 text-xl text-left ">Kegiatan</p>
+          {/* <SliderWrapper> */}
+          <Slider {...settings}>
+            <ArticleCard {...ARTICLESKegitan[0]} />
+            <ArticleCard {...ARTICLESKegitan[0]} />
+            <ArticleCard {...ARTICLESKegitan[0]} />
+            <ArticleCard {...ARTICLESKegitan[0]} />
+          </Slider>
+          {/* </SliderWrapper> */}
+        </div>
+
+        <div className="py-4">
+          <p className="pl-4 text-xl text-left ">Peringatan Hari</p>
+          <div className="pb-4 px-7">
+            {/* <SliderWrapper> */}
+            <Slider {...settings}>
+              <ArticleCardHariPenting {...ARTICLES[0]} />
+              <ArticleCardHariPenting {...ARTICLES[0]} />
+              <ArticleCardHariPenting {...ARTICLES[0]} />
+              <ArticleCardHariPenting {...ARTICLES[0]} />
+            </Slider>
+            {/* </SliderWrapper> */}
           </div>
         </div>
       </div>
@@ -91,7 +91,6 @@ var settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
         dots: true,
       },
     },
@@ -131,7 +130,7 @@ const ArticleCard: FC<ArticleCardProps> = ({
   href,
 }) => {
   return (
-    <div className="bg-black p-6 rounded-xl flex md:flex-row flex-col  gap-4 m-4 items-center">
+    <div className="bg-black p-6 rounded-xl flex md:flex-row flex-col gap-4 m-4 items-center">
       <div className="relative rounded shrink-0 w-44 h-64 ">
         <Image
           src={thumbnail}
