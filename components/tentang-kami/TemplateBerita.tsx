@@ -32,7 +32,7 @@ const TemplateBerita = (props: Props) => {
         Anggota Divisi {props.title} GPA CHEBY tahun 2022/2023
       </p>
 
-      <div className="container mx-auto py-2 text-justify px-4">
+      <div className="container mx-auto py-2 text-justify">
         {props.content.map((content) => (
           <p key={content} className="text-black px-4">
             {content}

@@ -58,7 +58,6 @@ module.exports = {
         abu: "#2D2D2D",
       },
       fontFamily: {
-        sans: "Montserrat",
         montserrat: "Montserrat",
         "montserrat-alternates": "'Montserrat Alternates'",
         poppins: "Poppins",

@@ -31,8 +31,8 @@ const LogoGpaCheby = () => {
           Divisi dan Sie GPA Cheby, yaitu:
         </p>
       </div>
-      <div className="text-black container mx-auto text-justify">
-        <p className="px-4">Divisi</p>
+      <p className="text-black container mx-auto py-1  px-4">Divisi</p>
+      <div className="text-black container mx-auto text-justify text-center">
         <div className="flex flex-col md:flex-row md:w-full w-11/12 mx-auto gap-6">
           <div className="w-full hover:shadow-xl">
             <Link
@@ -73,9 +73,8 @@ const LogoGpaCheby = () => {
           </div>
         </div>
       </div>
-      <div className="text-black container mx-auto py-1">
-        <p className="px-4">Seksi</p>
-
+      <p className="text-black container mx-auto py-1  px-4">Seksi</p>
+      <div className="text-black container mx-auto py-1 text-center">
         <div className="flex flex-col md:flex-row md:w-full w-11/12 mx-auto gap-6">
           <div className="w-full hover:shadow-xl ">
             <Link href={"/tentang_kami/sie/psdm"} className="w-full  ">

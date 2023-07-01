@@ -16,7 +16,7 @@ const contentSejarah = () => {
             className=""
           ></Image>
         </div> */}
-        <div className="float-right  relative aspect-video mx-auto m-5 pt-8 pb-4 pl-4">
+        <div className="float-right  relative aspect-video mx-auto m-5 pt-8 pb-4 pl-4 px-4">
           <img src="/sejarah/album-sejarah.png" alt="" className="w-full" />
         </div>
         <p className="text-black indent-8 px-4">

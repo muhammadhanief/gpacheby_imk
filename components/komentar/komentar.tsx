@@ -28,7 +28,7 @@ const Komentar = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-50 mt-4 rounded w-full px-6 py-4 text-sm">
+          <div className="bg-gray-50 mt-4 rounded w-full  py-4 text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -59,7 +59,7 @@ const Komentar = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-50 mt-4 rounded w-full px-6 py-4 text-sm">
+          <div className="bg-gray-50 mt-4 rounded w-full  py-4 text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

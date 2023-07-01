@@ -27,12 +27,12 @@ const Hero = () => {
         <div className="container mx-auto py-[20vh] text-white">
           <div className="pl-3">
             <h1 className="md:text-7xl  text-white ">
-              <span className="underline underline-offset-12 decoration-4 decoration-cheby">
+              <span className="underline underline-offset-12 decoration-4 decoration-cheby ">
                 GPA{" "}
               </span>
               Cheby
             </h1>
-            <p className="md:text-2xl  max-w-lg font-medium m              b-12">
+            <p className="md:text-2xl  max-w-lg font-medium mb-12">
               Organisasi kepecintaalaman yang berada dalam naungan senat
               mahasiswa Politeknik Statistika STIS
             </p>

@@ -2,7 +2,7 @@ import React from "react";
 import TemplateBerita from "@/components/tentang-kami/TemplateBerita";
 
 const Data = {
-  title: "Pertolongan Pertana dan SAR",
+  title: "Pertolongan Pertama dan SAR",
   imagesrc: "/foto-seksi/pp.png",
   content: [
     "Seksi PP dan SAR memiliki cakupan tugas, antara lain sebagai berikut :",

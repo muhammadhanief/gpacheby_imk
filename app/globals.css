@@ -31,10 +31,10 @@ a {
   @apply text-white no-underline hover:underline;
 }
 
-p {
+/* p {
   font-family: "Poppins";
 }
 
 h1 {
   font-family: "Montserrat";
-}
+} */
