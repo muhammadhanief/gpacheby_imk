@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
 import Hero from "@/components/children-kegiatan/hero";
 import axios from "axios";
 
@@ -70,18 +70,21 @@ export default function Page() {
                 </Link>
               ))}
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-2 ">
               <button
+                className="cursor-pointer w-8 h-8 "
                 onClick={() => {
                   setMeta({ ...meta, page: meta.page - 1 });
                 }}
                 disabled={meta.page === 1}
               >
-                prev
+                <ChevronLeftIcon />
               </button>
+
               {meta.page > 0 &&
                 new Array(meta.last_page).fill(0).map((_, i) => (
                   <button
+                    className="cursor-pointer w-8 h-8"
                     key={i}
                     onClick={() => {
                       setMeta({ ...meta, page: i + 1 });
@@ -91,12 +94,13 @@ export default function Page() {
                   </button>
                 ))}
               <button
+                className="cursor-pointer w-8 h-8"
                 onClick={() => {
                   setMeta({ ...meta, page: meta.page + 1 });
                 }}
                 disabled={meta.page === meta.last_page}
               >
-                next
+                <ChevronRightIcon />
               </button>
             </div>
           </div>
