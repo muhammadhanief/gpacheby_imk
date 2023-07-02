@@ -82,6 +82,7 @@ export default function page() {
               {meta.page > 0 &&
                 new Array(meta.last_page).fill(0).map((_, i) => (
                   <button
+                    key={i}
                     onClick={() => {
                       setMeta({ ...meta, page: i + 1 });
                     }}
