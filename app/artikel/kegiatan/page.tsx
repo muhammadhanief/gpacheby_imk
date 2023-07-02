@@ -61,7 +61,11 @@ export default function page() {
             {/* <div className=" grid grid-cols-4 gap-6"> */}
             <div className="flex flex-col md:flex-row">
               {articles.map((article) => (
-                <Link className="p-3" href={"/artikel/kegiatan/"}>
+                <Link
+                  className="p-3"
+                  key={article.date}
+                  href={"/artikel/kegiatan/"}
+                >
                   <ArticleCard {...article} />
                 </Link>
               ))}
