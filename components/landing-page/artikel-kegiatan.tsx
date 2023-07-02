@@ -144,7 +144,7 @@ const ArticleCard: FC<ArticleCardProps> = ({
       <div className="flex flex-col gap-4 w-full relative">
         <div className="flex justify-between w-full text-sm">
           <div className="text-cheby">{label}</div>
-          <div className="text-gray-100">{date}</div>
+          <div className="text-green-300">{date}</div>
         </div>
         <div className="md:text-xl text-lg text-white">
           <div>{title}</div>
@@ -152,7 +152,7 @@ const ArticleCard: FC<ArticleCardProps> = ({
         <div className="text-gray-100 text-justify">{description}</div>
         <div className="flex justify-end">
           <Link
-            className=" w-32 bg-cheby text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-white group"
+            className=" w-32 bg-white text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-cheby group"
             href={href}
           >
             Selengkapnya{" "}
@@ -211,7 +211,7 @@ const ArticleCardHariPenting: FC<ArticleCardProps> = ({
       <div className="flex flex-col gap-4 w-full relative">
         <div className="flex justify-between w-full text-sm">
           <div className="text-cheby">{label}</div>
-          <div className="text-gray-100">{date}</div>
+          <div className="text-green-300">{date}</div>
         </div>
         <div className="md:text-xl text-lg text-white">
           <div>{title}</div>
@@ -219,7 +219,7 @@ const ArticleCardHariPenting: FC<ArticleCardProps> = ({
         <div className="text-gray-100 text-justify">{description}</div>
         <div className="flex justify-end">
           <Link
-            className=" w-32 bg-cheby text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-white group"
+            className=" w-32 bg-white text-black p-4 rounded flex items-center gap-2 hover:no-underline hover:bg-cheby group"
             href={href}
           >
             Selengkapnya{" "}

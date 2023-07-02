@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroImage from "../../public/bg-hero.jpg";
 import Link from "next/link";
+import Button from "../button";
 
 const Hero = () => {
   return (
@@ -38,9 +39,9 @@ const Hero = () => {
             </p>
             <Link
               href="/tentang_kami"
-              className="bg-white py-1 px-2 md:px-8 md:p-4 md:text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
+              className="bg-white py-3 px-3 md:px-8 md:p-4 md:text-lg text-black rounded-md hover:bg-cheby hover:no-underline "
             >
-              Kenali kami
+              Kenali Kami
             </Link>
           </div>
         </div>

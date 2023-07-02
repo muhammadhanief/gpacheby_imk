@@ -126,6 +126,7 @@ const Peminatan = () => {
           <h1 className="text-2xl text-center uppercase text-white">
             Divisi Peminatan
           </h1>
+          <div className="h-1 bg-cheby w-20 mx-auto -mt-3" />
           {/* <div className="h-1 bg-cheby w-36 mx-auto -mt-3" /> */}
           <div className="hidden md:block">
             <div className="flex flex-col md:flex-row mx-auto gap-10 items-center  justify-center mt-16">

@@ -81,6 +81,7 @@ const PengurusHarian = () => {
     <div className="bg-white w-full py-20 text-black">
       <div className="container mx-auto">
         <h1 className="text-2xl text-center uppercase">Pengurus Harian</h1>
+        <div className="h-1 bg-cheby w-20 mx-auto -mt-3" />
         <div className="h-1 w-44 mx-auto -mt-3" />
         <div className="md:hidden w-2/3 mx-auto">
           <div className="mt-16 ">

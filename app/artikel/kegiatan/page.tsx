@@ -1,16 +1,37 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Hero from "@/components/children-kegiatan/hero";
+import axios from "axios";
 
 export default function page() {
+  const [articles, setArticles] = React.useState<ArticleCardProps[]>([]);
+  const [meta, setMeta] = React.useState<any>({
+    total: 0,
+    page: 1,
+    limit: 4,
+    last_page: 1,
+  });
+
+  React.useEffect(() => {
+    axios
+      .get(`/api/artikel?page=${meta.page}&limit=${meta.limit}`)
+      .then((res) => {
+        setArticles(res.data.data);
+        setMeta(res.data.meta);
+      });
+  }, [meta.page]);
+
   return (
     <main>
       <title>Kegiatan | GPA CHEBY</title>
       <div>
         <Hero />
+
         <div className="bg-white w-full py-3 text-black">
           <div className="container mx-auto">
             {/* <h1 className="text-2xl text-center uppercase">Kegiatan</h1> */}
@@ -39,30 +60,39 @@ export default function page() {
             </div> */}
             {/* <div className=" grid grid-cols-4 gap-6"> */}
             <div className="flex flex-col md:flex-row">
-              <Link
-                className="p-3"
-                href={"/artikel/kegiatan/children_kegiatan"}
+              {articles.map((article) => (
+                <Link className="p-3" href={"/artikel/kegiatan/"}>
+                  <ArticleCard {...article} />
+                </Link>
+              ))}
+            </div>
+            <div className="flex justify-center">
+              <button
+                onClick={() => {
+                  setMeta({ ...meta, page: meta.page - 1 });
+                }}
+                disabled={meta.page === 1}
               >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
-              <Link
-                className="p-3"
-                href={"/artikel/kegiatan/children_kegiatan"}
+                prev
+              </button>
+              {meta.page > 0 &&
+                new Array(meta.last_page).fill(0).map((_, i) => (
+                  <button
+                    onClick={() => {
+                      setMeta({ ...meta, page: i + 1 });
+                    }}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+              <button
+                onClick={() => {
+                  setMeta({ ...meta, page: meta.page + 1 });
+                }}
+                disabled={meta.page === meta.last_page}
               >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
-              <Link
-                className="p-3"
-                href={"/artikel/kegiatan/children_kegiatan"}
-              >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
-              <Link
-                className="p-3"
-                href={"/artikel/kegiatan/children_kegiatan"}
-              >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
+                next
+              </button>
             </div>
           </div>
         </div>
@@ -71,7 +101,7 @@ export default function page() {
   );
 }
 
-interface ArticleCardProps {
+export interface ArticleCardProps {
   title: string;
   label: string;
   date: string;
@@ -89,7 +119,7 @@ const ArticleCard: FC<ArticleCardProps> = ({
   href,
 }) => {
   return (
-    <div className="bg-black p-6 rounded-xl  gap-4">
+    <div className="bg-black p-6 rounded-xl gap-4">
       <div className="relative rounded mx-auto shrink-0 w-44 h-64 mb-3">
         <Image
           src={thumbnail}
@@ -122,15 +152,3 @@ const ArticleCard: FC<ArticleCardProps> = ({
     </div>
   );
 };
-
-const ARTICLES: ArticleCardProps[] = [
-  {
-    title: "Pelantikan Anggota Muda GPA Cheby Angkatan 46",
-    label: "Kegiatan",
-    date: "31 Mei 2021",
-    description:
-      "Pelantikan Anggota Muda GPA Cheby Angkatan 46 Pada Minggu, 5 Maret 2023, telah dilaksanakan Pelantikan Anggota Muda GPA Cheby Angkatan 46. ",
-    thumbnail: "/artikel/kegiatan/pelantikan-AM.jpeg",
-    href: "/artikel/kegiatan",
-  },
-];
