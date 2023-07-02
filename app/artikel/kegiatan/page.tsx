@@ -8,7 +8,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Hero from "@/components/children-kegiatan/hero";
 import axios from "axios";
 
-export default function page() {
+export default function Page() {
   const [articles, setArticles] = React.useState<ArticleCardProps[]>([]);
   const [meta, setMeta] = React.useState<any>({
     total: 0,
