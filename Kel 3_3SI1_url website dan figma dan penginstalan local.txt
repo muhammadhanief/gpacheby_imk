@@ -1,0 +1,26 @@
+website : https://gpacheby-imk.vercel.app/
+figma : https://www.figma.com/proto/rkFZsSxA2NEX8NoEbpyPpn/IMK-after-Survey?type=design&node-id=13-40&t=jMJcKr4SyI1vMI4E-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=13%3A40&mode=design 
+
+Penginstalan local :
+
+Aplikasi Ini dibangun menggunakan
+1. Front-end : NEXT JS
+2. Back-end : NODE JS
+3. CSS Framework : TailwindCSS
+
+Prasyarat Komputer: 
+1. Terinstall NPM
+2. Terinstall Javascrip
+3. Terinstall Node JS
+
+Langkah 1 jalankan aplikasi di server lokal dengan terminal diletakkan di direktori folder gpacheby_imk dengan perintah 
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+
+Langkah 2 buka aplikasi di peramban browser seperti google chrome atau safari
+Open http://localhost:3000 with your browser to see the result.
+
+file aplikasi zip ada di unggahan gcr
