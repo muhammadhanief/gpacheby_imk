@@ -1,10 +1,29 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import Hero from "@/components/children-hari-penting/hero";
+import axios from "axios";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
-export default function page() {
+export default function Page() {
+  const [articles, setArticles] = React.useState<ArticleCardProps[]>([]);
+  const [meta, setMeta] = React.useState<any>({
+    total: 0,
+    page: 1,
+    limit: 4,
+    last_page: 1,
+  });
+
+  React.useEffect(() => {
+    axios
+      .get(`/api/hari-penting?page=${meta.page}&limit=${meta.limit}`)
+      .then((res) => {
+        setArticles(res.data.data);
+        setMeta(res.data.meta);
+      });
+  }, [meta.page]);
   return (
     <main>
       <title>Hari Penting | GPA CHEBY</title>
@@ -13,30 +32,44 @@ export default function page() {
         <div className="bg-white w-full py-3 text-black">
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row">
-              <Link
-                className="p-3"
-                href={"/artikel/hari_penting/children_hari_penting"}
+              {articles.map((article) => (
+                <Link className="p-3" key={article.date} href={article.href}>
+                  <ArticleCard {...article} />
+                </Link>
+              ))}
+            </div>
+            <div className="flex justify-center gap-2 ">
+              <button
+                className="cursor-pointer w-8 h-8 "
+                onClick={() => {
+                  setMeta({ ...meta, page: meta.page - 1 });
+                }}
+                disabled={meta.page === 1}
               >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
-              <Link
-                className="p-3"
-                href={"/artikel/hari_penting/children_hari_penting"}
+                <ChevronLeftIcon />
+              </button>
+
+              {meta.page > 0 &&
+                new Array(meta.last_page).fill(0).map((_, i) => (
+                  <button
+                    className="cursor-pointer w-8 h-8"
+                    key={i}
+                    onClick={() => {
+                      setMeta({ ...meta, page: i + 1 });
+                    }}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+              <button
+                className="cursor-pointer w-8 h-8"
+                onClick={() => {
+                  setMeta({ ...meta, page: meta.page + 1 });
+                }}
+                disabled={meta.page === meta.last_page}
               >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
-              <Link
-                className="p-3"
-                href={"/artikel/hari_penting/children_hari_penting"}
-              >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
-              <Link
-                className="p-3"
-                href={"/artikel/hari_penting/children_hari_penting"}
-              >
-                <ArticleCard {...ARTICLES[0]} />
-              </Link>
+                <ChevronRightIcon />
+              </button>
             </div>
           </div>
         </div>
