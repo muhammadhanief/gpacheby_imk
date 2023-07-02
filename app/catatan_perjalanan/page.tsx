@@ -7,7 +7,7 @@ import Hero from "@/components/catatan-perjalanan/hero";
 import axios from "axios";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
 
-export default function page() {
+export default function Page() {
   const [articles, setArticles] = React.useState<ArticleCardProps[]>([]);
   const [meta, setMeta] = React.useState<any>({
     total: 0,
